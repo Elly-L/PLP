@@ -1,0 +1,29 @@
+# Simple calculator using if-else
+
+# Ask the user to enter first number
+num1 = float(input("Enter the first number: "))
+
+# Ask the user to enter second number
+num2 = float(input("Enter the second number: "))
+
+# Ask the user to enter an operator (+, -, *, /)
+op = input("Enter an operator (+, -, *, /): ")
+
+# Do the operation based on the operator entered
+if op == "+":
+    result = num1 + num2
+    print("The result is:", result)
+elif op == "-":
+    result = num1 - num2
+    print("The result is:", result)
+elif op == "*":
+    result = num1 * num2
+    print("The result is:", result)
+elif op == "/":
+    if num2 != 0:
+        result = num1 / num2
+        print("The result is:", result)
+    else:
+        print("Cannot divide by zero!")
+else:
+    print("Invalid operator")
