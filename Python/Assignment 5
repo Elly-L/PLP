@@ -1,0 +1,29 @@
+class Vehicle:
+    def move(self):
+        pass  # This method will be overridden by subclasses
+
+class Car(Vehicle):
+    def move(self):
+        print("Driving 🚗")
+
+class Plane(Vehicle):
+    def move(self):
+        print("Flying ✈️")
+
+class Bird:
+    def move(self):
+        print("Flying 🦅")
+
+# Function to demonstrate the move action
+def demonstrate_move(vehicle):
+    vehicle.move()
+
+# Create instances of Car and Plane
+car = Car()
+plane = Plane()
+bird = Bird()
+
+# Demonstrate the move action for each vehicle
+demonstrate_move(car)    # Output: Driving 🚗
+demonstrate_move(plane)  # Output: Flying ✈️
+demonstrate_move(bird)   # Output: Flying 🦅
