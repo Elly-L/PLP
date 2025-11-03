@@ -1,0 +1,17 @@
+#Manual Implementation
+def sort_dict_list(data, key):
+    return sorted(data, key=lambda x: x[key])
+
+#AI-Suggested (GitHub Copilot)
+def sort_dict_list(data, key):
+    try:
+        return sorted(data, key=lambda item: item.get(key, 0))
+    except Exception as e:
+        print(f"Error: {e}")
+        return data
+Analysis (200 words):
+Copilot’s version adds error handling and uses .get() to avoid KeyError, making it slightly more robust.
+However, the manual version is simpler and faster for controlled inputs.
+Efficiency-wise, both have O(n log n) complexity, but the Copilot version adds minimal overhead for error catching.
+AI-suggested code is more production-ready but may not always follow project style guides.
+Hence, AI can accelerate boilerplate generation, but human review ensures correctness and performance optimization.
