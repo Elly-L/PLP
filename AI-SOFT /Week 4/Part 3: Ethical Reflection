@@ -1,0 +1,6 @@
+The dataset may underrepresent certain patient demographics, leading to biased predictions in issue prioritization.
+For instance, if most samples are from one hospital or demographic group, the model may overfit to that context.
+
+Fairness Tools:
+IBM’s AI Fairness 360 can assess metrics like Disparate Impact and Equal Opportunity Difference, identifying where the model favors specific groups.
+Techniques like reweighing or bias mitigation algorithms can adjust model training to promote fairness, ensuring equitable resource allocation and trustworthy AI outcomes.
